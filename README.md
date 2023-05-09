@@ -6,12 +6,6 @@ Cuando comienzas a programar una aplicación web, todo es bastante fácil de pro
 
 La solucion proviene del testing. El testing nos ayuda a mantener la calidad de la aplicación a la vez que ahorramos el tiempo de las pruebas manuales.
 
-### Testing con Jest
-
-![Jest Logo](https://imgur.com/Qp7QFKi.png)
-
-**Jest** es un framework de testing automatizado para JavaScript. Es rápido y fácil de utilizar en comparación con otros frameworks.
-
 ### Instrucciones de uso
 
 - Realiza un "Fork" del proyecto a tu repositorio GitHub.
@@ -22,14 +16,12 @@ La solucion proviene del testing. El testing nos ayuda a mantener la calidad de 
   ```
   proyecto/
   ├── __tests__/
-  │   └── funcArray.spec.js
+  │   └── funcArray.test.js
   ├── src/
   |   └── funcArray.js
   ├── package.json
 
   ```
-
-- Abre un terminal en la raíz del proyecto y corre el comando `npm install`.
 
 **Ejecución de los tests**
 
@@ -59,34 +51,13 @@ Define una función `maxOfTwoNumbers` que tome dos números como argumentos y de
 
 Escribe una función `findLongestWord` que tome un array de palabras y devuelva la más larga. Si hay 2 con la misma longitud, debería devolver la primera.
 
-
-**Código de partida**
-
-```javascript
-let words = [
-  'mystery',
-  'brother',
-  'aviator',
-  'crocodile',
-  'pearl',
-  'orchard',
-  'crackpot'
-];
-```
-
 ### 3. Calcula la suma
 
 Itera sobre un array sumando cada elemento.
 
 Semanticamente [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) es el mejor método para hacer esta operación, aunque se puede utilizar cualquier tipo de bucle de los que hemos visto.
 
-Crea una función `sumArray` que tome un array de números como parámetro y calcule la suma de todos sus miembros:
-
-**Código de partida**
-
-```javascript
-let numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
-```
+Crea una función `sumArray` que tome un array de números como parámetro y calcule la suma de todos sus miembros.
 
 ### 4. Calcula la media aritmética
 
@@ -96,34 +67,12 @@ Para ello sigue el siguiente algoritmo:
 
 #### 4.1: Array de Números
 
-Escribe una función `averageNumbers` que reciba un array de números y calcule la media de los números:
-
-**Código de partida**
-
-```javascript
-let numbers = [2, 6, 9, 10, 7, 4, 1, 9];
-```
+Escribe una función `averageNumbers` que reciba un array de números y calcule la media de los números.
 
 #### 4.2: Array of Strings
 
-Escribe una función `averageWordLength` que reciba un array de palabras y calcule la media de la longitud de las palabras:
+Escribe una función `averageWordLength` que reciba un array de palabras y calcule la media de la longitud de las palabras.
 
-**Código de partida**
-
-```javascript
-let words = [
-    'seat',
-    'correspond',
-    'linen',
-    'motif',
-    'hole',
-    'smell',
-    'smart',
-    'chaos',
-    'fuel',
-    'palace'
-];
-```
 
 ### 5. Unique Arrays
 
@@ -131,65 +80,13 @@ Coge el siguiente array, elimina los duplicados y devuelve un nuevo array. Si lo
 
 Realiza este ejercicio como una fución `uniquifyArray` que reciba un array de palabras como parámetro.
 
-**Código de partida**
-
-```javascript
-let words = [
-  'crab',
-  'poison',
-  'contagious',
-  'simple',
-  'bring',
-  'sharp',
-  'playground',
-  'poison',
-  'communion',
-  'simple',
-  'bring'
-];
-
-```
-
 ### 6. Busca elementos
 
 Escribe una función `doesWordExist` que reciba un array de palabras como argumento y una palabra para buscar dentro del array. Devuelve `true` si existe, sino devuelve `false`. **No** utilices `indexOf` en este caso.
 
-**Código de partida**
-
-```javascript
-let words = [
-  'machine',
-  'subset',
-  'trouble',
-  'starting',
-  'matter',
-  'eating',
-  'truth',
-  'disobedience'
-];
-```
-
 ### 7. Cuenta repeticiones
 
 Escribe una función `howManyTimes` que tome un array de palabras como argumento y una palabra para buscar. La función devolverá el número de veces que una palabra aparece en el array.
-
-**Código de partida**
-
-```javascript
-let words = [
-  'machine',
-  'matter',
-  'subset',
-  'trouble',
-  'starting',
-  'matter',
-  'eating',
-  'matter',
-  'truth',
-  'disobedience'
-  'matter'
-];
-```
 
 ### X. Bonus Quest
 

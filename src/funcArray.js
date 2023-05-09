@@ -1,12 +1,12 @@
 /* Encuentra el máximo */
 
-export function maxOfTwoNumbers(){}
-export function findLongestWord(){}
-export function sumArray(){}
-export function averageNumbers(){}
+export function maxOfTwoNumbers(numero1,numero2){}
+export function findLongestWord(array){}
+export function sumArray(array){}
+export function averageNumbers(array){}
 export function averageWordLength(){}
 export function uniquifyArray(){}
-export function doesWordExist(){}
+export function doesWordExist(array, palabra){}
 export function howManyTimes(){}
 export function greatestProduct(){}
 
