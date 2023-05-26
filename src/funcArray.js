@@ -96,4 +96,58 @@ export function howManyTimes(array, palabra) {
   }
   return sumTimes;
 }
-export function greatestProduct() {}
+export function greatestProduct(array) {
+  let maxProduct = 0;
+
+  // Calcular el producto máximo en la dirección horizontal
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j <= array[i].length - 4; j++) {
+      const product =
+        array[i][j] * array[i][j + 1] * array[i][j + 2] * array[i][j + 3];
+      if (product > maxProduct) {
+        maxProduct = product;
+      }
+    }
+  }
+
+  // Calcular el producto máximo en la dirección vertical
+  for (let i = 0; i <= array.length - 4; i++) {
+    for (let j = 0; j < array[i].length; j++) {
+      const product =
+        array[i][j] * array[i + 1][j] * array[i + 2][j] * array[i + 3][j];
+      if (product > maxProduct) {
+        maxProduct = product;
+      }
+    }
+  }
+
+  // Calcular el producto máximo en la dirección diagonal hacia abajo y a la derecha
+  for (let i = 0; i <= array.length - 4; i++) {
+    for (let j = 0; j <= array[i].length - 4; j++) {
+      const product =
+        array[i][j] *
+        array[i + 1][j + 1] *
+        array[i + 2][j + 2] *
+        array[i + 3][j + 3];
+      if (product > maxProduct) {
+        maxProduct = product;
+      }
+    }
+  }
+
+  // Calcular el producto máximo en la dirección diagonal hacia arriba y a la derecha
+  for (let i = 3; i < array.length; i++) {
+    for (let j = 0; j <= array[i].length - 4; j++) {
+      const product =
+        array[i][j] *
+        array[i - 1][j + 1] *
+        array[i - 2][j + 2] *
+        array[i - 3][j + 3];
+      if (product > maxProduct) {
+        maxProduct = product;
+      }
+    }
+  }
+
+  return maxProduct;
+}
