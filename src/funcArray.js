@@ -66,7 +66,6 @@ export function greatestProduct(matrix){
   const cols = matrix[0].length;
   let maxProduct = 0;
 
-  // Calculate maximum product in rows
   for (let i = 0; i < rows; i++) {
     for (let j = 0; j < cols - 3; j++) {
       const product = matrix[i].slice(j, j + 4).reduce((a, b) => a * b, 1);
@@ -74,7 +73,6 @@ export function greatestProduct(matrix){
     }
   }
 
-  // Calculate maximum product in columns
   for (let i = 0; i < rows - 3; i++) {
     for (let j = 0; j < cols; j++) {
       const product = matrix.slice(i, i + 4).reduce((acc, row) => acc * row[j], 1);
@@ -82,7 +80,6 @@ export function greatestProduct(matrix){
     }
   }
 
-  // Calculate maximum product in diagonals
   for (let i = 0; i < rows - 3; i++) {
     for (let j = 0; j < cols - 3; j++) {
       let product = 1;
