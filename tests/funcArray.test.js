@@ -1,6 +1,7 @@
 import {describe, it} from 'node:test';
 import assert from 'node:assert/strict';
-import {maxOfTwoNumbers,
+import {
+  maxOfTwoNumbers,
   findLongestWord,
   sumArray,
   averageNumbers,
@@ -276,6 +277,7 @@ it('Return maxProduct when all max is vertical, not first column', ()=> {
     assert.StrictEqual(greatestProduct(matrix),6561);
   });
 
+  
 it('Return 16 when all the numbers of the arrays are 2', ()=> {
     let matrix = [
       [8, 2, 22, 97, 38, 15, 0, 40, 0, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8],
