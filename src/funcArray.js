@@ -77,14 +77,81 @@ export function uniquifyArray(array){
         console.log("valor de answer: "+answer);
         return answer;
 }
-*/
+
 export function doesWordExist(array, palabra){
-    
+    if(array.length === 0) return false 
+    const result = array.includes(palabra) ? true : false
+    return result
 }
-/*
-export function howManyTimes(){}
-export function greatestProduct(){}
- */
+
+export function howManyTimes(array, palabra){
+      if(array.length === 0) return undefined 
+  let occurrences = 0
+  let arrayIndex = array.indexOf(palabra)
+  while(arrayIndex !== -1) {
+    occurrences++
+    arrayIndex = array.indexOf(palabra, arrayIndex + 1)
+  }
+  return occurrences
+}
+*/
+
+export function greatestProduct(array){
+    let greatestP = 0;
+
+    // Horizontal
+    for (let i = 0; i < array.length; i++) {
+        for (let ii = 0; ii <= array[ii].length - 4; ii++) {
+          const singleP =
+            array[i][ii] * array[i][ii + 1] * array[i][ii + 2] * array[i][ii + 3];
+          if (singleP > greatestP) {
+            greatestP = singleP;
+          }
+        }
+      }
+    
+    // Vertical
+    for (let i = 0; i <= array.length - 4; i++) {
+        for (let ii = 0; ii < array[i].length; ii++) {
+          const singleP =
+            array[i][ii] * array[i + 1][ii] * array[i + 2][ii] * array[i + 3][ii];
+          if (singleP > greatestP) {
+            greatestP = singleP;
+          }
+        }
+      }
+
+    // Esquina Diagonal inferior
+    for (let i = 0; i <= array.length - 4; i++) {
+        for (let ii = 0; ii <= array[i].length - 4; ii++) {
+          const singleP =
+            array[i][ii] *
+            array[i + 1][ii + 1] *
+            array[i + 2][ii + 2] *
+            array[i + 3][ii + 3];
+          if (singleP > greatestP) {
+            greatestP = singleP;
+          }
+        }
+      }
+
+    // Esquina Diagonal superior 
+    for (let i = 3; i < array.length; i++) {
+        for (let ii = 0; ii <= array[i].length - 4; ii++) {
+          const singleP =
+            array[i][ii] *
+            array[i - 1][ii + 1] *
+            array[i - 2][ii + 2] *
+            array[i - 3][ii + 3];
+          if (singleP > greatestP) {
+            greatestP = singleP;
+          }
+        }
+      }
+
+      return greatestP;
+}
+
 
 
 

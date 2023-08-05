@@ -6,10 +6,10 @@ import {
   // sumArray,
   // averageNumbers,
   // averageWordLength,
-  uniquifyArray,
+  // uniquifyArray,
   // doesWordExist,
   // howManyTimes,
-  // greatestProduct
+  greatestProduct
 } from '../src/funcArray.js';
 
 const shuffle = (currentArray) => {
@@ -166,7 +166,7 @@ describe('Unique Arrays - uniquifyArray #6', () => {
     assert.deepStrictEqual(uniquifyArray(['iPhone', 'Samsung', 'Android', 'iOS', 'iPhone', 'Samsung', 'Nokia', 'Blackberry', 'Android']), ['iPhone', 'Samsung', 'Android', 'iOS', 'Nokia', 'Blackberry']);
   });
 });
- */
+
 describe('Finding Elements - doesWordExist #7', () => {
   it('Defines doesWordExist', () => {
     assert.strictEqual(typeof doesWordExist, 'function');
@@ -188,7 +188,7 @@ describe('Finding Elements - doesWordExist #7', () => {
     assert.strictEqual(doesWordExist(['pizza', 'sandwich', 'snack', 'soda', 'book', 'computer'], 'book'), true);
   });
 });
-/*
+
 describe('Counting Repetion - howManyTimes #8', () => {
   it('Defines howManyTimes', () => {
     assert.strictEqual(typeof howManyTimes, 'function');
@@ -210,6 +210,7 @@ describe('Counting Repetion - howManyTimes #8', () => {
     assert.strictEqual(howManyTimes(['basketball', 'football', 'tennis', 'rugby', 'rugby', 'ping pong', 'rugby', 'basketball', 'rugby', 'handball', 'rugby'], 'rugby'), 5);
   });
 });
+*/
 
 describe('Counting Repetion - greatestProduct', () => {
   it('Defines greatestProduct #9', () => {
@@ -302,4 +303,3 @@ describe('Counting Repetion - greatestProduct', () => {
     assert.strictEqual(greatestProduct(matrix), 51267216);
   });
 });
- */
