@@ -143,7 +143,9 @@ export function greatestProduct(matrix) {
   
     // Check vertically
     for (let col = 0; col < numCols; col++) {
+        //iterating tover each row to go over the columns
       for (let row = 0; row < numRows - 3; row++) {
+        //we are going through the columns by adding one to the row to go down on the column
         const verticalSlice = [matrix[row][col], matrix[row + 1][col], matrix[row + 2][col], matrix[row + 3][col]];
         const product = calculateProduct(verticalSlice);
         maxProduct = Math.max(maxProduct, product);
@@ -153,6 +155,7 @@ export function greatestProduct(matrix) {
     // Check diagonally
     for (let row = 0; row < numRows - 3; row++) {
       for (let col = 0; col < numCols - 3; col++) {
+        //we need to gt the value of the cells by matching their rows and columns to create a diagonal
         const diagonalSlice = [
           matrix[row][col], matrix[row + 1][col + 1], matrix[row + 2][col + 2], matrix[row + 3][col + 3]
         ];
