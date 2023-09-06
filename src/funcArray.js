@@ -76,5 +76,51 @@ export function doesWordExist(array, palabra){
         return true;
     } return false
 }
-export function howManyTimes(){}
-export function greatestProduct(){}
+export function howManyTimes(array, word) {
+    if (array.length === 0) {
+        return undefined;
+    }
+
+    const occurrences = array.filter(item => item === word);
+
+    return occurrences.length;
+}
+
+export function greatestProduct(matrix) {
+    if (matrix.length === 0) {
+        return undefined;
+    }
+
+    let maxProduct = -Infinity;
+
+    // Recorre la matriz y calcula el producto máximo
+    for (let i = 0; i < matrix.length; i++) {
+        for (let j = 0; j < matrix[i].length; j++) {
+            // Multiplica hacia la derecha
+            if (j + 3 < matrix[i].length) {
+                const productRight = matrix[i][j] * matrix[i][j + 1] * matrix[i][j + 2] * matrix[i][j + 3];
+                maxProduct = Math.max(maxProduct, productRight);
+            }
+
+            // Multiplica hacia abajo
+            if (i + 3 < matrix.length) {
+                const productDown = matrix[i][j] * matrix[i + 1][j] * matrix[i + 2][j] * matrix[i + 3][j];
+                maxProduct = Math.max(maxProduct, productDown);
+            }
+
+            // Multiplica en diagonal hacia abajo a la derecha
+            if (i + 3 < matrix.length && j + 3 < matrix[i].length) {
+                const productDiagonal = matrix[i][j] * matrix[i + 1][j + 1] * matrix[i + 2][j + 2] * matrix[i + 3][j + 3];
+                maxProduct = Math.max(maxProduct, productDiagonal);
+            }
+
+            // Multiplica en diagonal hacia abajo a la izquierda
+            if (i + 3 < matrix.length && j - 3 >= 0) {
+                const productDiagonal = matrix[i][j] * matrix[i + 1][j - 1] * matrix[i + 2][j - 2] * matrix[i + 3][j - 3];
+                maxProduct = Math.max(maxProduct, productDiagonal);
+            }
+        }
+    }
+
+    return maxProduct;
+}
