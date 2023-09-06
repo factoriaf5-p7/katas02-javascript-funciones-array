@@ -23,15 +23,21 @@ export function findLongestWord(array) {
         }, array[0]);
     }
 }
-export function sumArray(array){}
+
+export function sumArray(array) {
+    if (array.length === 0) {
+        return 0;
+    } else if (array.length === 1) {
+        return array[0];
+    } else if (array.every(x => x === 0)) {
+        return 0;
+    } else {
+        return array.reduce((acc, curr) => acc + curr, 0);
+    }
+}
 export function averageNumbers(array){}
 export function averageWordLength(){}
 export function uniquifyArray(){}
 export function doesWordExist(array, palabra){}
 export function howManyTimes(){}
 export function greatestProduct(){}
-
-
-
-
-

@@ -93,31 +93,31 @@ it('returns the sum, negative', ()=> {
   });
 });
 
-// describe('Calculating the Average - averageNumbers #4', ()=> {
-// it('Defines averageNumbers', ()=> {
-//     assert.strictEqual(typeof averageNumbers,'function');
-//   });
+describe('Calculating the Average - averageNumbers #4', ()=> {
+it('Defines averageNumbers', ()=> {
+    assert.strictEqual(typeof averageNumbers,'function');
+  });
 
-// it('returns undefined testh an empty array', ()=> {
-//     assert.strictEqual(averageNumbers([]),undefined);
-//   });
+it('returns undefined testh an empty array', ()=> {
+    assert.strictEqual(averageNumbers([]),undefined);
+  });
 
-// it('returns the average of a unique element array', ()=> {
-//     assert.strictEqual(averageNumbers([9]),9);
-//   });
+it('returns the average of a unique element array', ()=> {
+    assert.strictEqual(averageNumbers([9]),9);
+  });
 
-// it('returns the average even testh negative values', ()=> {
-//     assert.strictEqual(averageNumbers([9, -3, -4, 6]),2);
-//   });
+it('returns the average even testh negative values', ()=> {
+    assert.strictEqual(averageNumbers([9, -3, -4, 6]),2);
+  });
 
-// it('returns the average of the array', ()=> {
-//     assert.strictEqual(averageNumbers([9, 10, 82, 92, 32, 102, 58]),55);
-//   });
+it('returns the average of the array', ()=> {
+    assert.strictEqual(averageNumbers([9, 10, 82, 92, 32, 102, 58]),55);
+  });
 
-// it('returns the average of the array, float result', ()=> {
-//     assert.strictEqual(averageNumbers([1, 2]),1.5);
-//   });
-// });
+it('returns the average of the array, float result', ()=> {
+    assert.strictEqual(averageNumbers([1, 2]),1.5);
+  });
+});
 
 // describe('Calculating the Average - averageWordLength #5', ()=> {
 // it('Defines averageWordLength', ()=> {
