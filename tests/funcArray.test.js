@@ -151,19 +151,19 @@ it('returns undefined testh an empty array', ()=> {
   });
 
 it('returns the array when having a single element', ()=> {
-    assert.strictEqual(uniquifyArray(['FactoriaF5'])).toEqual(['FactoriaF5']);
+    assert.deepEqual(uniquifyArray(['FactoriaF5']),['FactoriaF5']);
   });
 
 it('returns the correct array when having an array of the same element', ()=> {
-    assert.strictEqual(uniquifyArray(['FactoriaF5', 'FactoriaF5', 'FactoriaF5'])).toEqual(['FactoriaF5']);
+    assert.deepEqual(uniquifyArray(['FactoriaF5', 'FactoriaF5', 'FactoriaF5']),['FactoriaF5']);
   });
 
 it('returns the same array when no element is repeated', ()=> {
-    assert.strictEqual(uniquifyArray(['Cat', 'Dog', 'Cow'])).toEqual(['Cat', 'Dog', 'Cow']);
+    assert.deepEqual(uniquifyArray(['Cat', 'Dog', 'Cow']),['Cat', 'Dog', 'Cow']);
   });
 
 it('returns the uniquified array', ()=> {
-    assert.strictEqual(uniquifyArray(['iPhone', 'Samsung', 'Android', 'iOS', 'iPhone', 'Samsung', 'Nokia', 'Blackberry', 'Android'])).toEqual(['iPhone', 'Samsung', 'Android', 'iOS', 'Nokia', 'Blackberry']);
+    assert.deepEqual(uniquifyArray(['iPhone', 'Samsung', 'Android', 'iOS', 'iPhone', 'Samsung', 'Nokia', 'Blackberry', 'Android']),['iPhone', 'Samsung', 'Android', 'iOS', 'Nokia', 'Blackberry']);
   });
 });
 

@@ -53,13 +53,24 @@ export function averageWordLength(array) {
         return totalLength / array.length;
     }
 }
+
 export function uniquifyArray(array) {
     if (array.length === 0) {
         return undefined;
-    } else if (array.length === 1){
+    } else if (array.length === 1) {
         return array;
-    } 
+    }
+
+    const uniqueArray = [];
+    for (const item of array) {
+        if (!uniqueArray.includes(item)) {
+            uniqueArray.push(item);
+        }
+    }
+
+    return uniqueArray;
 }
+
 export function doesWordExist(array, palabra){}
 export function howManyTimes(){}
 export function greatestProduct(){}
