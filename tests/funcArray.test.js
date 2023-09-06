@@ -119,53 +119,53 @@ it('returns the average of the array, float result', ()=> {
   });
 });
 
-// describe('Calculating the Average - averageWordLength #5', ()=> {
-// it('Defines averageWordLength', ()=> {
-//     assert.strictEqual(typeof averageWordLength,'function');
-//   });
+describe('Calculating the Average - averageWordLength #5', ()=> {
+it('Defines averageWordLength', ()=> {
+    assert.strictEqual(typeof averageWordLength,'function');
+  });
 
-// it('returns undefined testh an empty array', ()=> {
-//     assert.strictEqual(averageWordLength([]),undefined);
-//   });
+it('returns undefined testh an empty array', ()=> {
+    assert.strictEqual(averageWordLength([]),undefined);
+  });
 
-// it('returns the length of a unique element array', ()=> {
-//     assert.strictEqual(averageWordLength(['bcncodes']),8);
-//   });
+it('returns the length of a unique element array', ()=> {
+    assert.strictEqual(averageWordLength(['bcncodes']),8);
+  });
 
-// it('returns the length of a unique element array, float', ()=> {
-//     assert.strictEqual(averageWordLength(['a', 'ab']),1.5);
-//   });
+it('returns the length of a unique element array, float', ()=> {
+    assert.strictEqual(averageWordLength(['a', 'ab']),1.5);
+  });
 
-// it('returns the average of a the array', ()=> {
-//     assert.strictEqual(averageWordLength(['Bcncodes', 'Madrid', 'Barcelona', 'Paris', 'Miami', 'Mexico', 'Berlin', 'Programmers']),7);
-//   });
-// });
+it('returns the average of a the array', ()=> {
+    assert.strictEqual(averageWordLength(['Bcncodes', 'Madrid', 'Barcelona', 'Paris', 'Miami', 'Mexico', 'Berlin', 'Programmers']),7);
+  });
+});
 
-// describe('Unique Arrays - uniquifyArray #6', ()=> {
-// it('Defines uniquifyArray', ()=> {
-//     assert.strictEqual(typeof uniquifyArray,'function');
-//   });
+describe('Unique Arrays - uniquifyArray #6', ()=> {
+it('Defines uniquifyArray', ()=> {
+    assert.strictEqual(typeof uniquifyArray,'function');
+  });
 
-// it('returns undefined testh an empty array', ()=> {
-//     assert.strictEqual(uniquifyArray([]),undefined);
-//   });
+it('returns undefined testh an empty array', ()=> {
+    assert.strictEqual(uniquifyArray([]),undefined);
+  });
 
-// it('returns the array when having a single element', ()=> {
-//     assert.strictEqual(uniquifyArray(['FactoriaF5'])).toEqual(['FactoriaF5']);
-//   });
+it('returns the array when having a single element', ()=> {
+    assert.strictEqual(uniquifyArray(['FactoriaF5'])).toEqual(['FactoriaF5']);
+  });
 
-// it('returns the correct array when having an array of the same element', ()=> {
-//     assert.strictEqual(uniquifyArray(['FactoriaF5', 'FactoriaF5', 'FactoriaF5'])).toEqual(['FactoriaF5']);
-//   });
+it('returns the correct array when having an array of the same element', ()=> {
+    assert.strictEqual(uniquifyArray(['FactoriaF5', 'FactoriaF5', 'FactoriaF5'])).toEqual(['FactoriaF5']);
+  });
 
-// it('returns the same array when no element is repeated', ()=> {
-//     assert.strictEqual(uniquifyArray(['Cat', 'Dog', 'Cow'])).toEqual(['Cat', 'Dog', 'Cow']);
-//   });
+it('returns the same array when no element is repeated', ()=> {
+    assert.strictEqual(uniquifyArray(['Cat', 'Dog', 'Cow'])).toEqual(['Cat', 'Dog', 'Cow']);
+  });
 
-// it('returns the uniquified array', ()=> {
-//     assert.strictEqual(uniquifyArray(['iPhone', 'Samsung', 'Android', 'iOS', 'iPhone', 'Samsung', 'Nokia', 'Blackberry', 'Android'])).toEqual(['iPhone', 'Samsung', 'Android', 'iOS', 'Nokia', 'Blackberry']);
-//   });
-// });
+it('returns the uniquified array', ()=> {
+    assert.strictEqual(uniquifyArray(['iPhone', 'Samsung', 'Android', 'iOS', 'iPhone', 'Samsung', 'Nokia', 'Blackberry', 'Android'])).toEqual(['iPhone', 'Samsung', 'Android', 'iOS', 'Nokia', 'Blackberry']);
+  });
+});
 
 // describe('Finding Elements - doesWordExist #7', ()=> {
 // it('Defines doesWordExist', ()=> {

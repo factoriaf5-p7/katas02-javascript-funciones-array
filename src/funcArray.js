@@ -35,7 +35,16 @@ export function sumArray(array) {
         return array.reduce((acc, curr) => acc + curr, 0);
     }
 }
-export function averageNumbers(array){}
+
+export function averageNumbers(array) {
+    if (array.length === 0) {
+        return undefined;
+    } else if (array.length === 1) {
+        return array[0];
+    }
+    return array.reduce((acc, curr) => acc + curr, 0) / array.length;
+}
+
 export function averageWordLength(){}
 export function uniquifyArray(){}
 export function doesWordExist(array, palabra){}
