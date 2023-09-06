@@ -71,6 +71,10 @@ export function uniquifyArray(array) {
     return uniqueArray;
 }
 
-export function doesWordExist(array, palabra){}
+export function doesWordExist(array, palabra){
+    if (array.includes(palabra)){
+        return true;
+    } return false
+}
 export function howManyTimes(){}
 export function greatestProduct(){}

@@ -167,27 +167,27 @@ it('returns the uniquified array', ()=> {
   });
 });
 
-// describe('Finding Elements - doesWordExist #7', ()=> {
-// it('Defines doesWordExist', ()=> {
-//     assert.strictEqual(typeof doesWordExist,'function');
-//   });
+describe('Finding Elements - doesWordExist #7', ()=> {
+it('Defines doesWordExist', ()=> {
+    assert.strictEqual(typeof doesWordExist,'function');
+  });
 
-// it('returns false testh an empty array', ()=> {
-//     assert.strictEqual(doesWordExist([]),false);
-//   });
+it('returns false testh an empty array', ()=> {
+    assert.strictEqual(doesWordExist([]),false);
+  });
 
-// it('returns true if the word we are looking is the only one on the array', ()=> {
-//     assert.strictEqual(doesWordExist(['machine'], 'machine'),true);
-//   });
+it('returns true if the word we are looking is the only one on the array', ()=> {
+    assert.strictEqual(doesWordExist(['machine'], 'machine'),true);
+  });
 
-// it('returns false if the word we are looking is not in the array', ()=> {
-//     assert.strictEqual(doesWordExist(['machine', 'poison', 'eat', 'apple', 'horse'], 'ratatouille'),false);
-//   });
+it('returns false if the word we are looking is not in the array', ()=> {
+    assert.strictEqual(doesWordExist(['machine', 'poison', 'eat', 'apple', 'horse'], 'ratatouille'),false);
+  });
 
-// it('returns true if the word we are looking is in the array', ()=> {
-//     assert.strictEqual(doesWordExist(['pizza', 'sandwich', 'snack', 'soda', 'book', 'computer'], 'book'),true);
-//   });
-// });
+it('returns true if the word we are looking is in the array', ()=> {
+    assert.strictEqual(doesWordExist(['pizza', 'sandwich', 'snack', 'soda', 'book', 'computer'], 'book'),true);
+  });
+});
 
 // describe('Counting Repetion - howManyTimes #8', ()=> {
 // it('Defines howManyTimes', ()=> {
