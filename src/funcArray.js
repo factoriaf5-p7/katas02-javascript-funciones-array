@@ -45,8 +45,21 @@ export function averageNumbers(array) {
     return array.reduce((acc, curr) => acc + curr, 0) / array.length;
 }
 
-export function averageWordLength(){}
-export function uniquifyArray(){}
+export function averageWordLength(array) {
+    if (array.length === 0) {
+        return undefined;
+    } else {
+        const totalLength = array.reduce((acc, word) => acc + word.length, 0);
+        return totalLength / array.length;
+    }
+}
+export function uniquifyArray(array) {
+    if (array.length === 0) {
+        return undefined;
+    } else if (array.length === 1){
+        return array;
+    } 
+}
 export function doesWordExist(array, palabra){}
 export function howManyTimes(){}
 export function greatestProduct(){}
